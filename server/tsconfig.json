@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
       "target": "ES2017",
-      "module": "commonjs",
+      "module": "commonjs", // Explicitly CommonJS
       "outDir": "./",
       "rootDir": "./",
       "strict": true,
       "esModuleInterop": true,
-      "skipLibCheck": true
+      "skipLibCheck": true,
+      "moduleResolution": "node" // Ensure Node.js-style resolution
     },
     "include": ["signaling.ts"],
     "exclude": ["node_modules"]
